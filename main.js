@@ -63,7 +63,7 @@ login.addEventListener("click", (e)=>{
   .then((userCredential) => {
     // Signed in
     var user = userCredential.user;
-    window.location.href = "https://web.iedelcampito.repl.co/dash-board";
+    window.location.href = "https://inedec.github.io/web/dash-board";
     document.querySelector("#error").textContent = "";
   })
   .catch((error) => {
@@ -95,7 +95,7 @@ loginGoogle.addEventListener("click", (e)=>{
     // ...
 
     closeModals();
-    window.location.href = "https://web.iedelcampito.repl.co/dash-board";
+    window.location.href = "https://inedec.github.io/web/dash-board";
   }).catch((error) => {
     // Handle Errors here.
     var errorCode = error.code;
@@ -154,7 +154,7 @@ registerGoogle.addEventListener("click", (e)=>{
     // ...
 
     closeModals();
-    window.location.href = "https://web.iedelcampito.repl.co/dash-board";
+    window.location.href = "https://inedec.github.io/web/dash-board";
   }).catch((error) => {
     // Handle Errors here.
     var errorCode = error.code;
@@ -169,7 +169,7 @@ registerGoogle.addEventListener("click", (e)=>{
 
 firebase.auth().onAuthStateChanged((user) => {
   if (user) {
-    window.location.href = "https://web.iedelcampito.repl.co/dash-board";
+    window.location.href = "https://inedec.github.io/web/dash-board";
     var uid = user.uid;
   } else {
     
