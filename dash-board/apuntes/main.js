@@ -50,7 +50,7 @@ if(localStorage.getItem("dark-mode") == "true"){
 
 const perfil = document.getElementById("perfil");
 perfil.addEventListener("click", ()=>{
-  window.location.href = "https://web.iedelcampito.repl.co/perfil"
+  window.location.href = "https://inedec.github.io/web/perfil"
 })
 
 // apuntes
@@ -147,6 +147,6 @@ firebase.auth().onAuthStateChanged((user) => {
     })
 
   } else {
-    window.location.href = "https://web.iedelcampito.repl.co"
+    window.location.href = "https://inedec.github.io/web"
   }
 });
