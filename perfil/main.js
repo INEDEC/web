@@ -24,7 +24,7 @@ if(localStorage.getItem("dark-mode") == "true"){
 // perfil
 const perfil = document.getElementById("back");
 perfil.addEventListener("click", ()=>{
-  window.location.href = "https://web.iedelcampito.repl.co/dash-board"
+  window.location.href = "https://inedec.github.io/web/dash-board"
 })
 
 // actualizar perfil
@@ -45,7 +45,7 @@ const actualizarPerfil = (name)=>{
     
   }); 
 
-  window.location.href = "https://web.iedelcampito.repl.co/perfil";
+  window.location.href = "https://inedec.github.io/web/perfil";
 } 
 
 editName.addEventListener("click", ()=>{
@@ -121,7 +121,7 @@ btnNewCode.addEventListener("click", (e)=>{
       code: newCodeInput.value
     }).then(()=>{
       document.querySelector("#messageResetCode").textContent = "Codigo cambiado correctamente"
-      window.location.href = "https://web.iedelcampito.repl.co/perfil"
+      window.location.href = "https://inedec.github.io/web/perfil"
     }).catch((error) => {
       // The document probably doesn't exist.
       console.error("Error updating document: ", error);
@@ -151,6 +151,6 @@ firebase.auth().onAuthStateChanged((user) => {
       }
     })
   } else {
-    window.location.href = "https://web.iedelcampito.repl.co"
+    window.location.href = "https://inedec.github.io/web"
   }
 });
