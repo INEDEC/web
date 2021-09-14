@@ -21,7 +21,7 @@ enviar.addEventListener("click", (e)=>{
     firebase.auth().sendPasswordResetEmail(email)
     .then(() => {
       console.log("correo enviado");
-      window.location.href = "https://web.iedelcampito.repl.co"
+      window.location.href = "https://inedec.github.io/web"
     })
     .catch((error) => {
       var errorCode = error.code;
@@ -38,11 +38,11 @@ enviar.addEventListener("click", (e)=>{
 
 const perfil = document.getElementById("back");
 perfil.addEventListener("click", ()=>{
-  window.location.href = "https://web.iedelcampito.repl.co"
+  window.location.href = "https://inedec.github.io/web"
 })
 
 firebase.auth().onAuthStateChanged((user) => {
   if (user) {
-    window.location.href = "https://web.iedelcampito.repl.co/dash-board"
+    window.location.href = "https://inedec.github.io/web/dash-board"
   }
 });
